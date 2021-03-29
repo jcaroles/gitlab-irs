@@ -1,11 +1,10 @@
-import React from 'react';
 import Tippy from 'react-tooltip';
 import { connect } from 'react-redux';
 
 
 const GitLab = (props) => {
 
-console.log(props.git)
+
 
 const displayMessage = (id) => {
     return (<div>
@@ -19,8 +18,14 @@ const displayMessage = (id) => {
 }
 
 const displayValues = () => {
+    
+
+    if(props.gitMessage[0] === undefined) {
+        <div>Please search proper filenames</div>
+    }
 
     if(props.gitMessage[0] !== undefined) {
+        
         return <div className="ui relaxed divided list">{props.git.map(value => {
             return (
             <div className="item" key={value.id}>
@@ -37,6 +42,7 @@ const displayValues = () => {
     
             })}  
             </div>
+
     } else {
         <div> Loading ...</div>
 
@@ -45,7 +51,7 @@ const displayValues = () => {
 
     return (
     <div style={{marginTop: '20px'}}>
-        {displayValues() ? displayValues() : "Please hit enter upon searching for a Project... (It might take a while)"}
+        {displayValues() ? displayValues() : "Please wait while after searching as it may take a while..."}
 
         <div style={{marginTop: '10px'}}>Developed by: John Carole R. Hernandez</div>
     </div>)
