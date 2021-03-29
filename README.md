@@ -1,3 +1,19 @@
+Hi IRS team,
+
+-> To simply start the the application locally, first download this repository and in your command line (root folder is the folder of the application), please input "npm install", this will install the needed modules for this application to run.
+
+-> Once the installation is done. To start it now locally, type in the command line npm start
+
+-> To run test, type npm run test on a different commandline (Root folder is the folder of the application)
+
+-> Or just simply visit the deployed URL of this application which I deployed in netlify: https://distracted-nightingale-7a15ae.netlify.app/
+
+-> Other necessary documents needed are sent through email (irs).
+
+Thank you and God bless!
+
+======================================================================================================
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
