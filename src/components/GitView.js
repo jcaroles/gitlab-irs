@@ -51,7 +51,7 @@ const displayValues = () => {
 
     return (
     <div style={{marginTop: '20px'}}>
-        {displayValues() ? displayValues() : "Please wait while after searching as it may take a while..."}
+        {displayValues() ? displayValues() : "Please wait a while after searching as it may take a while..."}
 
         <div style={{marginTop: '10px'}}>Developed by: John Carole R. Hernandez</div>
     </div>)
