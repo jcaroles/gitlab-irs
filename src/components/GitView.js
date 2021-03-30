@@ -4,8 +4,6 @@ import { connect } from 'react-redux';
 
 const GitLab = (props) => {
 
-
-
 const displayMessage = (id) => {
     return (<div>
             {props.gitMessage.map(value => {
@@ -21,7 +19,15 @@ const displayValues = () => {
     
 
     if(props.gitMessage[0] === undefined) {
-        <div>Please search proper filenames</div>
+        return (<div class="ui icon message">
+        <i class="search icon"></i>
+        <div class="content">
+          <div class="header">
+            It might take a while to fetch some content after searching.
+          </div>
+          <p>Please wait.</p>
+        </div>
+      </div>)
     }
 
     if(props.gitMessage[0] !== undefined) {
@@ -50,10 +56,10 @@ const displayValues = () => {
 }
 
     return (
-    <div style={{marginTop: '20px'}}>
-        {displayValues() ? displayValues() : "Please wait a while after searching as it may take a while..."}
+    <div className="ui message" style={{marginTop: '20px'}}>
+        {displayValues() ? displayValues() : <div className="header">Please wait a while after searching as it may take a while...</div>}
 
-        <div style={{marginTop: '10px'}}>Developed by: John Carole R. Hernandez</div>
+        
     </div>)
 }
 

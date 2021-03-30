@@ -9,7 +9,7 @@ const GitLab = (props) => {
     const [search, setSelectedSearch] = useState('');
     const [check, setCheck] = useState(true);
 
- 
+  
     const onInputChange = (evt) => {
         setSelectedSearch(evt.target.value)
     }
@@ -42,6 +42,7 @@ const GitLab = (props) => {
 
         <div>
         <GitView/>
+        <p style={{marginTop: '10px'}}>Developed by: John Carole R. Hernandez</p>
         </div>
         
 

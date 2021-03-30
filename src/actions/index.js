@@ -50,10 +50,6 @@ export const gitMessage = (project) => async (dispatch, getState) => {
 
     dispatch({ type: 'GET_MESSAGE', payload: message})
 
-    console.log("THE FINAL MESSAGE", message)
-
-    
-
 }
 
 
