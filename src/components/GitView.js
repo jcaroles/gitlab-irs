@@ -25,7 +25,7 @@ const displayValues = () => {
           <div class="header">
             It might take a while to fetch some content after searching.
           </div>
-          <p>Please wait.</p>
+          <p>So please wait.</p>
         </div>
       </div>)
     }
