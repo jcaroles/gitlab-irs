@@ -10,6 +10,9 @@ Hi IRS team,
 
 -> Other necessary documents needed are sent through email (irs).
 
+IMPORTANT NOTE:
+-> If search term does not exist in GitLab, it will not display anything.
+
 Thank you and God bless!
 
 ======================================================================================================
