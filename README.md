@@ -11,7 +11,7 @@ Hi IRS team,
 -> Other necessary documents needed are sent through email (irs).
 
 IMPORTANT NOTE:
--> If search term does not exist in GitLab, it will not display anything.
+-> If search term exists in GitLab repo, it will be displayed. If such search term does not exists in GitLab repo, it will not display anything.
 
 Thank you and God bless!
 
